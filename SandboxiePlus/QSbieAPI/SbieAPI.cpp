@@ -2170,19 +2170,19 @@ QString CSbieAPI::GetFeatureStr()
 	quint32 flags = GetFeatureFlags();
 
 	QStringList str;
-	if (flags & SBIE_FEATURE_FLAG_WFP)
+//	if (flags & SBIE_FEATURE_FLAG_WFP)
 		str.append("WFP");
-	if (flags & SBIE_FEATURE_FLAG_OB_CALLBACKS)
+//	if (flags & SBIE_FEATURE_FLAG_OB_CALLBACKS)
 		str.append("ObCB");
-	if (flags & SBIE_FEATURE_FLAG_SBIE_LOGIN)
+//	if (flags & SBIE_FEATURE_FLAG_SBIE_LOGIN)
 		str.append("SbL");
-	if (flags & SBIE_FEATURE_FLAG_SECURITY_MODE)
+//	if (flags & SBIE_FEATURE_FLAG_SECURITY_MODE)
 		str.append("SMod");
-	if (flags & SBIE_FEATURE_FLAG_PRIVACY_MODE)
+//	if (flags & SBIE_FEATURE_FLAG_PRIVACY_MODE)
 		str.append("PMod");
-	if (flags & SBIE_FEATURE_FLAG_COMPARTMENTS)
+//	if (flags & SBIE_FEATURE_FLAG_COMPARTMENTS)
 		str.append("AppC");
-	if (flags & SBIE_FEATURE_FLAG_WIN32K_HOOK)
+//	if (flags & SBIE_FEATURE_FLAG_WIN32K_HOOK)
 		str.append("W32k");
 
 	return str.join(",");
